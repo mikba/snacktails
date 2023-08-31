@@ -10,17 +10,7 @@ class App extends Component {
         <header className="App-header">
 
           <video src={Myvideo} autoPlay loop muted />
-          <p>
-            Hello from Brooklyn!
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          
         </header>
       </div>
     );
