@@ -10,11 +10,6 @@ class App extends Component {
         <header className="App-header">
 
           <video src={Myvideo} autoPlay loop muted />
-	  <div className="App-Content">
-		<div className="App-Brick">one</div>
-		<div className="App-Brick">two</div>
-		<div className="App-Brick">tree</div>
-	  </div>
           
         </header>
       </div>
