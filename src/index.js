@@ -1,10 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-//import './index.css';
-import App from './Home';
-import * as serviceWorker from './serviceWorker';
+import React, { Component } from "react";
+var __html = require('./Home.js');
+var template = { __html: __html };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class ScreenShare extends Component {
+  render() {
+    return (
+      <div className="screen-share">
+        <span dangerouslySetInnerHTML={template} />
+      </div>
+    );
+  }
+}
+export default ScreenShare;
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
