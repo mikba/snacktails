@@ -7,8 +7,19 @@
   height: 40vmin;
 }
 
+.App-Content {
+  width:60vw;
+}
+
+.App-Brick {
+  color:white;
+  height:240px;
+  width:240px;
+  border:1px solid #a0a0a0;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,6 +27,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+video {
+  opacity:0.4;
+  width:100vw;
 }
 
 .App-link {
