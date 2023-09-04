@@ -1,9 +1,9 @@
 module.exports = `<!DOCTYPE html>
 <html lang="de-DE">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="profile" href="https://gmpg.org/xfn/11">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
         <title>Mizar am Stein</title>
         <meta name="description" content="Lorem ipsom dolor sit amit Lorem ipsom dolor sit amit Lorem ipsom dolor sit amit Lorem ipsom dolor sit amit Lorem ipsom dolor sit amit "/>
