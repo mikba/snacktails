@@ -50,7 +50,7 @@ video {
    ========================================================================== */
 
 body.background-image {
-    background: url(../img/bg.jpg) no-repeat center center fixed; 
+    background: url(../img/BGL.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -92,13 +92,13 @@ a {
 }
 
 a.button {
-    color: #ffffff !important;
+    color: black !important;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    background: #000000;
+    background: #ffaf8a;
     padding: 8px 16px;
-    border: 1px solid #ffffff !important;
+    border: 1px solid black !important;
     display: inline-block;
     margin-top: 20px;
     -webkit-transition: all 0.4s ease 0s;
