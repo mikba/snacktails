@@ -5,6 +5,7 @@ body {
     width: 100%;
     height: 100%;
     color:black;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 html {
@@ -15,7 +16,7 @@ html {
     height: 100%;
 }
 
-body.background-image {
+body.background-image { 
     background: url(../img/BGL.JPG) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -25,12 +26,17 @@ body.background-image {
 }
 
 a {
-    font-family: "Helvetica Neue LT W05_65 Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
     cursor: pointer;
-    font-weight: 300;
+    font-weight: 500;
+    font-size:14pt;
     color:black;
     display: block;
+}
+
+.smallText {
+    font-size:12pt;
+    font-weight:400;
 }
 
 a.button {
