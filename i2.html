@@ -19,14 +19,17 @@
     function display(panel) {
         // Get the div element by its id
 	var src = document.getElementById(panel).innerHTML;
+	var otl = document.getElementById("OTLink");
 	var tgt = document.getElementById("displayFrame");
 
 	if(src == ""){
 		// home page
 		document.getElementById("logo").className = "logo";
+		otl.style.display = "inline";
 		document.getElementById("displayFrame").className = "main-content-hidden";
 	}else{
 		document.getElementById("logo").className = "logoS";
+		otl.style.display = "none";
 		document.getElementById("displayFrame").className = "main-content";
 	}
 
@@ -43,7 +46,12 @@
 </head>
 
 <body class="background-image">
+        <a class="social-link" target="_blank" id="OTLink" style="z-index:100;position:absolute;" href="https://www.opentable.de/r/mizar-reserva:ons-wurzburg?restref=351387&lang=de-
+DE&ot_source=Restaurant%20website">
+            <img src="./img/OTLogo.png" />
+        </a>
     <nav class="main-navigation">
+
         <a href="#" alt="MIZAR Home" class="logo" id="logo" onclick="display('home');">
 		<img class="fullsize" src="img/logos/MIZAR_Logo_black_transp.png" />
         </a>
@@ -82,7 +90,11 @@
     <span class="hidden" id="home"></span>
     <span class="hidden" id="restaurant">restua</span>
     <span class="hidden" id="contact">kontack</span>
-    <span class="hidden" id="reservation">res</span>
+    <span class="hidden" id="reservation"><script type='text/javascript'
+src='http://www.opentable.de/widget/reserva:on/loader?rid=351387&type=standard&theme=t
+
+all&color=1&dark=false&iframe=true&domain=de&lang=de-
+DE&newtab=false&ot_source=Restaurant%20website&cfe=true'></script></span>
     <span class="hidden" id="menu">menu</span>
 </body>
 
