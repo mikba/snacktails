@@ -79,21 +79,6 @@ a.button:hover {
     width: 1.5rem;
 }
 
-.logo {
-    z-index: 10;
-    position: fixed;
-    top: 36px;
-    left: 1%;
-    width: 60%;
-}
-
-.logoS {
-    z-index: 10;
-    position: fixed;
-    top: 0px;
-    left: 1%;
-    width: 20%;
-}
 .fullsize {
     width:100%;
 }

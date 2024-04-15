@@ -12,11 +12,45 @@
 	background:black;
 }
 .blurbText {
-	font-size:20pt;
+	font-size:18pt;
 }
 .tagline {
-	font-size:22pt;
 }
+
+.logo {
+    z-index: 10;
+    position: fixed;
+    top: 36px;
+    left: 1%;
+    width: 60%;
+}
+
+.logoS {
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 1%;
+    width: 20%;
+}
+
+@media (width <= 1440px) {
+	.blurbText {
+		font-size:14pt;
+	}
+}
+@media (width <= 900px) {
+	.blurbText {
+		font-size:10pt;
+	}
+	.logo {
+	    z-index: 10;
+	    position: fixed;
+	    top: 0px;
+	    left: 1%;
+	    width: 20%;
+	}
+}
+
 </style>
 <link rel="stylesheet" href="css/m2.css">
 
@@ -24,17 +58,17 @@
     function display(panel) {
         // Get the div element by its id
 	var src = document.getElementById(panel).innerHTML;
-	var otl = document.getElementById("OTLink");
+	//var otl = document.getElementById("OTLink");
 	var tgt = document.getElementById("displayFrame");
 
 	if(src == "" || panel == "home"){
 		// home page
 		document.getElementById("logo").className = "logo";
-		otl.style.display = "inline";
+		//otl.style.display = "inline";
 		document.getElementById("displayFrame").className = "main-content-hidden";
 	}else{
 		document.getElementById("logo").className = "logoS";
-		otl.style.display = "none";
+		//otl.style.display = "none";
 		document.getElementById("displayFrame").className = "main-content";
 	}
 
@@ -51,9 +85,9 @@
 </head>
 
 <body class="background-image">
-        <a class="social-link" target="_blank" id="OTLink" style="z-index:100;position:absolute;" href="https://www.opentable.de/r/mizar-reservations-wurzburg?restref=351387&lang=de-DE&ot_source=Restaurant%20website">
+       <!-- <a class="social-link" target="_blank" id="OTLink" style="z-index:100;position:absolute;" href="https://www.opentable.de/r/mizar-reservations-wurzburg?restref=351387&lang=de-DE&ot_source=Restaurant%20website">
             <img src="./img/OTLogo.png" />
-        </a>
+        </a> -->
     <nav class="main-navigation">
 
         <a href="#" alt="MIZAR Home" class="logo" id="logo" onclick="display('home');">
