@@ -12,11 +12,65 @@
 	background:black;
 }
 .blurbText {
-	font-size:20pt;
+	font-size:18pt;
 }
 .tagline {
-	font-size:22pt;
 }
+
+.logo {
+    z-index: 10;
+    position: fixed;
+    top: 36px;
+    left: 1%;
+    width: 60%;
+}
+.main-content {
+    position:fixed;
+    top: 20%;  
+    left: 20%;  
+    margin: 0px;
+    padding: 20px;
+    height: 60%;
+    width: 60%;
+background-color: rgba(255,250,250,0.75);
+}
+
+.logoS {
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 1%;
+    width: 20%;
+}
+
+@media (width <= 1440px) {
+	.blurbText {
+		font-size:14pt;
+	}
+}
+@media (width <= 900px) {
+	.blurbText {
+		font-size:10pt;
+	}
+	.logo {
+	    z-index: 10;
+	    position: fixed;
+	    top: 0px;
+	    left: 1%;
+	    width: 20%;
+	}
+.main-content {
+    position:fixed;
+    top: 10%;  
+    left: 10%;  
+    margin: 0px;
+    padding: 10px;
+    height: 60%;
+    width: 70%;
+background-color: rgba(255,250,250,0.75);
+}
+}
+
 </style>
 <link rel="stylesheet" href="css/m2.css">
 
@@ -24,17 +78,17 @@
     function display(panel) {
         // Get the div element by its id
 	var src = document.getElementById(panel).innerHTML;
-	var otl = document.getElementById("OTLink");
+	//var otl = document.getElementById("OTLink");
 	var tgt = document.getElementById("displayFrame");
 
 	if(src == "" || panel == "home"){
 		// home page
 		document.getElementById("logo").className = "logo";
-		otl.style.display = "inline";
+		//otl.style.display = "inline";
 		document.getElementById("displayFrame").className = "main-content-hidden";
 	}else{
 		document.getElementById("logo").className = "logoS";
-		otl.style.display = "none";
+		//otl.style.display = "none";
 		document.getElementById("displayFrame").className = "main-content";
 	}
 
@@ -51,9 +105,9 @@
 </head>
 
 <body class="background-image">
-        <a class="social-link" target="_blank" id="OTLink" style="z-index:100;position:absolute;" href="https://www.opentable.de/r/mizar-reservations-wurzburg?restref=351387&lang=de-DE&ot_source=Restaurant%20website">
+       <!-- <a class="social-link" target="_blank" id="OTLink" style="z-index:100;position:absolute;" href="https://www.opentable.de/r/mizar-reservations-wurzburg?restref=351387&lang=de-DE&ot_source=Restaurant%20website">
             <img src="./img/OTLogo.png" />
-        </a>
+        </a> -->
     <nav class="main-navigation">
 
         <a href="#" alt="MIZAR Home" class="logo" id="logo" onclick="display('home');">
@@ -82,9 +136,11 @@
 	    97082 Wuerzburg<br/>
             +49 157 813 11 453</a></div>
 
-        <div style="float:right" ><a href="reservation.html" class="smallText">Donnerstag bis Montag<br/>
-	von 18:30 Urh bis 24:00 Uhr<br/>
-	Dresscode: Casual Chic</a></div>
+        <div style="float:right" >
+	Mittwoch bis Samstag<br/>
+	Mittags 12:00-13:30<br/>
+	Abends  18:30-23:30 Uhr
+	</div>
     </div>
 
     <div class="awards-footer">
