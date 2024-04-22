@@ -68,16 +68,7 @@ a.button:hover {
     right: 2%;
 }
 
-.main-navigation--left a {
-    margin-right: 1rem;    
-    float:left;
-}
 
-.main-navigation a.social-link {
-    margin-right: 0;
-    margin-left: 1rem;
-    width: 1.5rem;
-}
 
 .fullsize {
     width:100%;
